@@ -1,0 +1,64 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "align": false,
+    "arrow-parens": false,
+    "indent": [true, "spaces", 2],
+    "interface-name": [
+        true,
+        "never-prefix"
+    ],
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "no-console": { "severity": "warning" },
+    "no-switch-case-fall-through": true,
+    "no-irregular-whitespace": true,
+    "no-var-requires": false,
+    "max-classes-per-file": false,
+    "max-line-length": [
+        true,
+        180
+    ],
+    "member-access": [
+        false
+    ],
+    "member-ordering": [
+        false
+    ],
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "prefer-conditional-expression": false,
+    "semicolon": [
+        true,
+        "always",
+        "ignore-interfaces"
+    ],
+    "switch-default": true,
+    "quotemark": {
+        "severity": "warning",
+        "options": [
+            "single",
+            "jsx-double"
+        ]
+    },
+    "variable-name": [
+        true,
+        "ban-keywords"
+    ],
+    "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-separator",
+        "check-type",
+        "check-typecast"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}
